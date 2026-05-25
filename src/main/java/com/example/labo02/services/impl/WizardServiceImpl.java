@@ -40,7 +40,7 @@ public class WizardServiceImpl implements WizardService {
     }
 
     @Override
-    public Wizard getByPatronus(String patronus) {
+    public List<Wizard> getByPatronus(String patronus) {
         return wizardRepository.findByPatronusIgnoreCase(patronus);
     }
 

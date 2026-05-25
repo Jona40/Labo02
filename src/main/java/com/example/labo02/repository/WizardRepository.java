@@ -9,5 +9,5 @@ import java.util.UUID;
 @Repository
 public interface WizardRepository extends JpaRepository<Wizard, UUID> {
     List<Wizard> findByIsDeatheaterTrue();
-    Wizard findByPatronusIgnoreCase(String patronus);
+    List<Wizard> findByPatronusIgnoreCase(String patronus);
 }

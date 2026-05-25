@@ -9,6 +9,6 @@ public interface WizardService {
     List<Wizard> getAllWizards();
     List<Wizard> getDeathEaters();
     Wizard updateWizard(UUID id, Wizard wizard);
-    Wizard getByPatronus(String patronus);
+    List<Wizard> getByPatronus(String patronus);
     void deleteWizard(UUID id);
 }

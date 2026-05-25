@@ -37,7 +37,7 @@ public class WizardController {
     }
 
     @GetMapping("/patronus/{patronus}")
-    public ResponseEntity<Wizard> getByPatronus(@PathVariable String patronus) {
+    public ResponseEntity<List<Wizard>> getByPatronus(@PathVariable String patronus) {
         return ResponseEntity.ok(wizardService.getByPatronus(patronus));
     }
 
